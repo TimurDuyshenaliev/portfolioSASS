@@ -1,0 +1,121 @@
+.portfolio{
+    padding-bottom: 139px;
+    padding-top: 93px;
+    display: grid;
+}
+
+.portfolio h2{
+    grid-area: 1/1/2/3;
+}
+.portfolio > div{
+    display: grid;
+    grid-template-columns: 349px 635px ;
+    gap: 86px 125px;
+}
+.portfolio img{
+    width: 100%;
+    align-self: stretch;
+}
+.portfolio__image{
+    display: grid;
+    gap: 30px;
+    grid-template: "river bridge" 144px
+                   "ships bridge" 89px
+                   "ships building" 144px / 55.118% 40.1574%;
+    padding-top: 66px;               
+}
+.portfolio__image img:nth-child(1){
+    grid-area: river;
+}
+.portfolio__image img:nth-child(2){
+    grid-area: bridge;
+}
+.portfolio__image img:nth-child(3){
+    grid-area: ships;
+}
+.portfolio__image img:nth-child(4){
+    grid-area: building;
+}
+.portfolio__content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.portfolio__content-text h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+@media (max-width:400px){
+    .portfolio__content-text h3{
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+}
+.portfolio__content-text p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+@media (max-width:400px){
+    .portfolio__content-text p{
+        font-size: 1.2rem;
+    }
+}
+.content-text{
+    flex-grow: 1;
+}
+.buttons button:last-child{
+    transform: rotate(180deg);
+    margin-left: 18px;
+}
+@media (max-width: 1200px) {
+    .conteiner{
+        width: 80%;
+    }
+    .portfolio > div{
+        grid-template-columns: 1fr;
+    }
+    .portfolio h2{
+        grid-area: unset;
+        padding-top: 0;
+    }
+    .buttons{
+        display: none;
+    }
+    .portfolio__image{
+        padding-top: 0;
+        width: 80%;
+    }
+    
+}
+@media(max-width: 767px){
+    .portfolio{
+        text-align: center;
+    }
+    .portfolio > div{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-items: center;
+    }
+    .portfolio__image{
+        gap: 30px;
+        grid-template: "river bridge" 70px
+                        "ships bridge" 31px
+                        "ships building" 70px / 55.118% 40.1574%;
+    }
+}
+@media (max-width:400px){
+    .portfolio{
+        padding-top: 25px ;
+        padding-bottom: 25px;
+    }
+    .portfolio > div{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        justify-items: center;
+    }
+    .portfolio__image{
+        gap: 12px;
+        
+    }
+}

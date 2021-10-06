@@ -1,0 +1,142 @@
+.main{
+    background-image: url("../images/main.jpeg");
+    background-size: cover;
+    background-position: center ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width: 767px){
+    .main{
+        text-align: center;
+        height: 500px;
+    }
+}
+@media (max-width: 400px) {
+    .main{
+        height: 275px;
+        text-align: center;
+    }
+}
+.header{ 
+    padding-top: 93px;
+    padding-bottom: 30px;
+}
+@media(max-width: 767px){
+    .header{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width:400px) {
+    .header{
+        padding-top: 36px;
+        padding-bottom: 50px;
+    }
+}
+.header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(max-width: 767px){
+    .header > div{
+        display: block;
+    }
+}
+@media (max-width: 400px){
+    .header > div{
+        display: block;
+    }
+}
+.logo{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+@media(max-width: 767px){
+    .logo{
+        font-size: 3.4rem;
+    }
+}
+.header__list{
+    display: flex;
+    gap: 60px
+}
+@media(max-width: 767px){
+    .header__list{
+        display: none;
+    }
+}
+@media (max-width: 400px){
+    .header__list{
+        display: none;
+    }
+}
+.header__item{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+.header__item-mod{
+    font-weight: 700;
+}
+.main__content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.main__content > div{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__content__text-h{
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+
+}
+@media(max-width: 767px){
+    .main__content__text-h{
+        font-size: 5.4rem;
+    }
+}
+@media (max-width:400px){
+    .main__content__text-h{
+        font-size: 2rem;
+    }
+}
+.main__content__text-p{
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin-bottom: 106px;
+
+}
+@media (max-width:400px){
+    .main__content__text-p{
+        font-size: 1.3rem;
+        margin-bottom: 41px;
+    }
+}
+.main__content__text-a{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+@media (max-width:400px){
+    .main__content__text-a{
+        font-size: 1.3rem;
+        margin-bottom: 50px;
+    }
+}
