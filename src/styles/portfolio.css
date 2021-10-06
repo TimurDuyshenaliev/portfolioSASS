@@ -64,6 +64,10 @@
 .content-text{
     flex-grow: 1;
 }
+.buttons button{
+    color: transparent;
+    border: none;
+}
 .buttons button:last-child{
     transform: rotate(180deg);
     margin-left: 18px;
